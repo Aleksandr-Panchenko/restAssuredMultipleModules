@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static io.restassured.filter.log.LogDetail.ALL;
 
-public class JsonPlaceholderTest extends TestConfig {
+public class JsonPlaceholderTests extends TestConfig {
     @Test
     void getAllPosts() {
         given().spec(jsonPlaceholderSpec).

@@ -41,7 +41,7 @@ public class Constants {
         public static String COMMENTS = "comments/";
 
         //reqres
-        public static String GET_LIST_USERS = "users?page=";
+        public static String GET_LIST_USERS = "users";
         public static String GET_SINGLE_USER = "users/";
 
         //suggestions

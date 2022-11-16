@@ -17,6 +17,7 @@ import static constants.Constants.Servers.*;
 
 public class TestConfig {
     final protected RequestSpecification swapiSpec = new RequestSpecBuilder().setBaseUri(HTTP + SWAPI_SERVER).setBasePath(SWAPI_PATH).build();
+    final protected RequestSpecification reqresSpec = new RequestSpecBuilder().setBaseUri(HTTPS + REQRES_SERVER).setBasePath(REQRES_PATH).build();
     final protected RequestSpecification jsonPlaceholderSpec = new RequestSpecBuilder().setBaseUri(HTTP + JSONPLACEHOLDER).build();
     final protected RequestSpecification jsonPlaceholderPostsSpec = new RequestSpecBuilder().setBaseUri(HTTP + JSONPLACEHOLDER).setBasePath(POSTS).build();
     final protected RequestSpecification pipedreamSpec = new RequestSpecBuilder().setBaseUri(HTTPS + PIPEDREAM).build();
