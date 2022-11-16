@@ -1,5 +1,3 @@
-package swapi;
-
 import config.TestConfig;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;

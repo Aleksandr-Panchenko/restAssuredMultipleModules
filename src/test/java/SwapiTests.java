@@ -1,6 +1,3 @@
-package swapi;
-
-
 import config.TestConfig;
 import io.restassured.http.ContentType;
 import io.restassured.http.Header;
@@ -29,6 +26,7 @@ public class SwapiTests extends TestConfig {
         Headers headers = response.getHeaders();
         String respContentType = response.getContentType();
     }
+
     @Test
     void filmsTest() {
         given().spec(swapiSpec).
@@ -37,6 +35,5 @@ public class SwapiTests extends TestConfig {
                 then().
                 spec(getResponseSpecification).
                 log().body();
-
     }
 }
