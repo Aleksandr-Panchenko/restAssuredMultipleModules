@@ -1,18 +1,22 @@
-##Арі тесты для Rest Assured
+##Арі тесты для Rest Assured 
+
 ###Инфо по проекту
 `src/main/java/constants/Constants.java` - класс, в котором хранятся все ссылки и методы апи
-
+`src/main/java/config/TestConfig.java` - класс-родитель тестов, помеченный `@BeforeClass`, который связывает константы с тестами. В нем так же создаются спецификации.
 
 ##Lifehacks
-- Если хочешь использовать аннотацию @BeforeClass из другого класса - сделай класс с тестами дочерним
-- Если хочешь использовать разные baseURI и basePath для разных тестнаборов, используй RequestSpecification,  созданную через RequestSpecBuilder: https://stackoverflow.com/questions/30426397/how-to-initialize-multiple-restassured-url-in-the-same-project-without-overridin
+- Если хочешь использовать аннотацию `@BeforeClass` из другого класса - сделай класс с тестами дочерним;
+- Если хочешь использовать разные `baseURI` и `basePath` для разных тестнаборов, используй `RequestSpecification`,  созданную через `RequestSpecBuilder`: https://stackoverflow.com/questions/30426397/how-to-initialize-multiple-restassured-url-in-the-same-project-without-overridin
+- Чтобы сделать некую кастомную спеку базовой (не вызывать её каждый раз в тесте), то можно в `@BeforeCalss` сделать `RestAssured.requestSpecification = customSpec;`\
+  В целом, спеки позволяют подготовить набор хедеров, куки и авторизации для отправки в тестах
+- В `ResponseSpecification` прописываются время ожидания, боди, хидеры, статускоды и тд. ответа.
 
 ###Тест 1
 - Используя сервис https://reqres.in/ получить список пользователей со второй (2) страницы
 - Убедиться что имена файлов-аватаров пользоваталей совпадают:
 - Убедиться, что email пользователей имеет окончание reqres. in;
 ###Тест 2.1
-- Используя сервис https://reqres.in/ протестировать регистрацию пользователя в системе \
+- Используя сервис https://reqres.in/ протестировать регистрацию пользователя в системе
 - Необходимо создание 2 тестов:
 - успешная регистрация
 

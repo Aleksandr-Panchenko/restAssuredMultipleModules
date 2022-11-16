@@ -17,8 +17,8 @@ public class SwapiTests extends TestConfig {
                 log().uri().log().ifValidationFails(ALL).
                 when().get(GET_FILMS + "1").
                 then().
-                log().body().
-                statusCode(200);
+                spec(getResponseSpecification).
+                log().body();
 
     }
 }

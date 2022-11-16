@@ -16,6 +16,7 @@ public class Constants {
     public static class Servers {
         public static String SWAPI_SERVER = "swapi.dev/";
         public static String JSONPLACEHOLDER = "jsonplaceholder.typicode.com/";
+        public static String PIPEDREAM = "eoj5p83fdbiqrlg.m.pipedream.net/";
         public static String REQRES_SERVER = "reqres.in/";
         public static String SUGGESTIONS_SERVER = "suggestions.dadata.ru/";
     }
