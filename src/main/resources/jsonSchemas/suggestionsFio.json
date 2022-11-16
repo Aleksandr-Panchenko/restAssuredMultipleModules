@@ -1,0 +1,954 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "suggestions": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "1unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "null"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "null"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "null"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "null"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "null"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "null"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "unrestricted_value": {
+              "type": "string"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "surname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "null"
+                },
+                "patronymic": {
+                  "type": "null"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "null"
+                },
+                "qc": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "surname",
+                "name",
+                "patronymic",
+                "gender",
+                "source",
+                "qc"
+              ]
+            }
+          },
+          "required": [
+            "value",
+            "unrestricted_value",
+            "data"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "suggestions"
+  ]
+}

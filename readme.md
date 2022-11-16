@@ -13,8 +13,9 @@
 - Параметры в GET-запрос добавляются методом `given.queryParam("page", "2")`
 - Обратиться к nth элементу объекта можно так: `"корень_массива.поле_эл-та_массива[номер_эл-та]"`. Пример для json:
   `{"page": 2,"data": [{"id": 7 }, {"id": 8 }] }` `"data.id[0]"`
-- Валидация по XSD делается путем использования метода: `then().
+- Валидация по XSD выполняется путем использования метода: `then().
   body(io.restassured.matcher.RestAssuredMatchers.matchesXsdInClasspath("fileName.xsd"))`
+- Валидация по JSON Schema выполняется путем использования метода: `then().body(matchesJsonSchemaInClasspath())` из `<artifactId>json-schema-validator</artifactId>`
 
 
 
