@@ -16,8 +16,50 @@
 - Валидация по XSD выполняется путем использования метода: `then().
   body(io.restassured.matcher.RestAssuredMatchers.matchesXsdInClasspath("fileName.xsd"))`
 - Валидация по JSON Schema выполняется путем использования метода: `then().body(matchesJsonSchemaInClasspath())` из `<artifactId>json-schema-validator</artifactId>`
+- 
+- 
+- 
+- 
+- 
+- 
+На доизучить:
 
+- Как преобразовать в pojo средствами фреймворка? Jackson или Gson, в зависимости от того, что находится в classpath. 
+Для преобразования в XML используется JAXB. Формат определяется автоматически по Content-Type.
+`given().contentType(ContentType.JSON).body(somePojo)
+  .when().post(EndPoints.add)
+  .then()
+  .statusCode(201);`\
+`// то же самое работает и в обратную сторону:
+SomePojo pojo = given()
+.when().get(EndPoints.get)
+.then().extract().body().as(SomePojo.class);`
+- GROOVY
+ методы `find`, `findAll` применяются к коллекции для поиска первого и всех вхождений, метод collect для  создания новой коллекции из найденных результатов.
 
+переменная `it` создается неявно и указывает на текущий элемент коллекции
+`Map<String, ?> map = get(EndPoints.anyendpoint).path("rootelement.find { it.title =~ 'anythingRegExp'}");`
+
+можете явно задать название переменной, указывающей на текущий элемент
+`Map<String, ?> map = get(EndPoints.anyendpoint).path("rootelement.findAll { element -> element.title.length() > 4 }");`
+
+вы можете использовать методы sum, max, min для суммирования всех значений коллекции, а также поиска максимального и минимально значения
+`String expensiveCar = get(EndPoints.cars).path("cars.find { it.title == 'Toyota Motor Corporation'}.models.max { it.averagePrice }.title");`
+
+- Несколько проверок в одном запросе: `given().cookie(«key», «value»)
+  .when().get(«someUrl»)
+  .then().statusCode(200).body(matchesJsonSchemaInClasspath(«schema.json»)).cookie(«newCookie»);`\
+  В данном случае будет 3 проверки: Статус код соответствует 200; Тело ответа соответствует Json Schema; В ответ пришел новый куки с ключом «newCookie».
+- Для лучшей читабельности можно использовать вызов союза and():
+  `...then().statusCode(200)
+  .and()
+  .body(matchesJsonSchemaInClasspath(«schema.json»))
+  .and()
+  .cookie(«newCookie»);`
+  Терминальными методами являются только методы, вызываемые после метода extract():
+  `...then().statusCode(200).extract().body().asString();`
+- стоит ли десерилизовать ответ в класс или можно обойтись матчерами Hamcrest прямо в методе body()? 
+Десериализация может понадобиться, например, для осуществления долгосрочного хранения или преобразования сущности в другой формат.
 
 ###Тест 1
 - Используя сервис https://reqres.in/ получить список пользователей со второй (2) страницы

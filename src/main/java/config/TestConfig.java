@@ -24,7 +24,7 @@ public class TestConfig {
     final protected RequestSpecification jsonPlaceholderPostsSpec = new RequestSpecBuilder().setBaseUri(HTTP + JSONPLACEHOLDER).setBasePath(POSTS).build();
     final protected RequestSpecification pipedreamSpec = new RequestSpecBuilder().setBaseUri(HTTPS + PIPEDREAM).build();
 
-    final protected ResponseSpecification getResponseSpecification = new ResponseSpecBuilder().expectResponseTime(Matchers.lessThan(5000L)).expectStatusCode(200).build();
+    final protected ResponseSpecification getResponseSpecification = new ResponseSpecBuilder().expectResponseTime(Matchers.lessThan(20000L)).expectStatusCode(200).build();
     final protected ResponseSpecification postResponseSpecification = new ResponseSpecBuilder().expectResponseTime(Matchers.lessThan(5000L)).expectStatusCode(201).build();
 
     @BeforeClass

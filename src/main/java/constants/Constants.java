@@ -1,50 +1,50 @@
 package constants;
 
-public class Constants {
+public final class Constants {
 
 //      настройка для единственного модуля в проекте, когда RequestSpecification не нужна
 //    public static class RunVariable {
-//        public static String server = Protocols.HTTP + Servers.JSONPLACEHOLDER;
-//        public static String path = Actions.COMMENTS;
+//        public static final String server = Protocols.HTTP + Servers.JSONPLACEHOLDER;
+//        public static final String path = Actions.COMMENTS;
 //    }
 
     public static class Protocols {
-        public static String HTTP = "http://";
-        public static String HTTPS = "https://";
+        public static final String HTTP = "http://";
+        public static final String HTTPS = "https://";
     }
 
     public static class Servers {
-        public static String SWAPI_SERVER = "swapi.dev/";
-        public static String JSONPLACEHOLDER = "jsonplaceholder.typicode.com/";
-        public static String PIPEDREAM = "eoj5p83fdbiqrlg.m.pipedream.net/";
-        public static String REQRES_SERVER = "reqres.in/";
-        public static String SUGGESTIONS_SERVER = "suggestions.dadata.ru/";
+        public static final String SWAPI_SERVER = "swapi.dev/";
+        public static final String JSONPLACEHOLDER = "jsonplaceholder.typicode.com/";
+        public static final String PIPEDREAM = "eoj5p83fdbiqrlg.m.pipedream.net/";
+        public static final String REQRES_SERVER = "reqres.in/";
+        public static final String SUGGESTIONS_SERVER = "suggestions.dadata.ru/";
     }
 
     public static class Paths {
-        public static String SWAPI_PATH = "api/";
-        public static String REQRES_PATH = "api/";
-        public static String SUGGESTIONS_PATH = "suggestions/api/4_1/rs/suggest/";
+        public static final String SWAPI_PATH = "api/";
+        public static final String REQRES_PATH = "api/";
+        public static final String SUGGESTIONS_PATH = "suggestions/api/4_1/rs/suggest/";
     }
 
     public static class Actions {
         //swapi
-        public static String GET_FILMS = "films/";
-        public static String GET_PEOPLE = "people/";
-        public static String GET_PLANETS = "planets/";
-        public static String GET_SPECIES = "species/";
-        public static String GET_STARSHIPS = "starships/";
-        public static String GET_VEHICLES = "vehicles/";
+        public static final String GET_FILMS = "films/";
+        public static final String GET_PEOPLE = "people/";
+        public static final String GET_PLANETS = "planets/";
+        public static final String GET_SPECIES = "species/";
+        public static final String GET_STARSHIPS = "starships/";
+        public static final String GET_VEHICLES = "vehicles/";
 
         //jsonplaceholder
-        public static String POSTS = "posts/";
-        public static String COMMENTS = "comments/";
+        public static final String POSTS = "posts/";
+        public static final String COMMENTS = "comments/";
 
         //reqres
-        public static String GET_LIST_USERS = "users";
-        public static String GET_SINGLE_USER = "users/";
+        public static final String GET_LIST_USERS = "users";
+        public static final String GET_SINGLE_USER = "users/";
 
         //suggestions
-        public static String POST_FIO = "fio";
+        public static final String POST_FIO = "fio";
     }
 }

@@ -5,6 +5,7 @@ import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 import static constants.Constants.Actions.*;
@@ -35,5 +36,21 @@ public class SwapiTests extends TestConfig {
                 then().
                 spec(getResponseSpecification).
                 log().body();
+    }
+
+    @Test
+    void getPeople() {
+        Response response = given().spec(swapiSpec).
+                log().uri().log().ifValidationFails(ALL).
+                when().get(GET_PEOPLE).
+                then().
+                spec(getResponseSpecification).
+                log().body().
+                extract().response();
+        Map<String, ?> lukeSkywalker = response.path("results.find{ it.name = 'Luke Skywalker'}");
+        ArrayList<?> mass77 = response.path("results.findAll{ it.mass == '77'}");
+        ArrayList<?> namesInSWFilms = response.path("results.findAll{ it.films}.name");
+        String firstLukeFilm = response.path("results.find{ it.name = 'Luke Skywalker'}.films?.find()");
+        String lukeUrl = response.path("results.find{ it.name = 'Luke Skywalker'}.url");
     }
 }

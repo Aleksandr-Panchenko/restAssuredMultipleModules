@@ -1,4 +1,5 @@
 import config.TestConfig;
+import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
@@ -11,7 +12,7 @@ public class SuggestionsTests extends TestConfig {
     void xmlXsdValidationTest() {
         given().spec(suggestionsSpec).
                 log().uri().log().ifValidationFails(ALL).
-                header("Accept", "application/xml").
+                accept(ContentType.XML).
                 body("{\n" +
                         "  \"query\": \"Викто\",\n" +
                         "  \"count\": 1\n" +
@@ -27,7 +28,7 @@ public class SuggestionsTests extends TestConfig {
     void jsonValidationTest() {
         given().spec(suggestionsSpec).
                 log().uri().log().ifValidationFails(ALL).
-                header("Accept", "application/json").
+                accept(ContentType.JSON).
                 body("{\n" +
                         "  \"query\": \"Викто\",\n" +
                         "  \"count\": 20\n" +
