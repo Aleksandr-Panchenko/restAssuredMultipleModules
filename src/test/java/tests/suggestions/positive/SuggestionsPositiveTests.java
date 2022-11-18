@@ -1,3 +1,5 @@
+package tests.suggestions.positive;
+
 import config.TestConfig;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
@@ -7,7 +9,7 @@ import static io.restassured.filter.log.LogDetail.ALL;
 import static io.restassured.matcher.RestAssuredMatchers.matchesXsdInClasspath;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
-public class SuggestionsTests extends TestConfig {
+public class SuggestionsPositiveTests extends TestConfig {
     @Test
     void xmlXsdValidationTest() {
         given().spec(suggestionsSpec).

@@ -1,6 +1,6 @@
+package tests.swapi.positive;
+
 import config.TestConfig;
-import io.restassured.http.ContentType;
-import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
@@ -13,7 +13,7 @@ import static constants.Constants.Actions.*;
 import static io.restassured.RestAssured.*;
 import static io.restassured.filter.log.LogDetail.*;
 
-public class SwapiTests extends TestConfig {
+public class SwapiPositiveTests extends TestConfig {
 
     @Test
     void swapiTest() {

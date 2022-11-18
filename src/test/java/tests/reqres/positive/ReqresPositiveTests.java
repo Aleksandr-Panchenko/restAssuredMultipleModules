@@ -1,15 +1,15 @@
+package tests.reqres.positive;
+
 import config.TestConfig;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
-
-import java.util.Map;
 
 import static constants.Constants.Actions.*;
 import static io.restassured.RestAssured.given;
 import static io.restassured.filter.log.LogDetail.ALL;
 import static org.hamcrest.Matchers.*;
 
-public class ReqresTests extends TestConfig {
+public class ReqresPositiveTests extends TestConfig {
 
     @Test
     void getListUsersFromSecondPage() {
