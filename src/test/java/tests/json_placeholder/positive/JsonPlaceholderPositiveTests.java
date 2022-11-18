@@ -1,10 +1,12 @@
+package tests.json_placeholder.positive;
+
 import config.TestConfig;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.filter.log.LogDetail.ALL;
 
-public class JsonPlaceholderTests extends TestConfig {
+public class JsonPlaceholderPositiveTests extends TestConfig {
     @Test
     void getAllPosts() {
         given().spec(jsonPlaceholderSpec).

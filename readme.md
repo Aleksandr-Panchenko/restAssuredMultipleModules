@@ -1,8 +1,15 @@
 ##Арі тесты для Rest Assured 
 
 ###Инфо по проекту
-`src/main/java/constants/Constants.java` - класс, в котором хранятся все ссылки и методы апи
-`src/main/java/config/TestConfig.java` - класс-родитель тестов, помеченный `@BeforeClass`, который связывает константы с тестами. В нем так же создаются спецификации.
+???`src/main/java/constants/Constants.java` - класс, в котором хранятся все ссылки и методы апи
+???`src/main/java/config/TestConfig.java` - класс-родитель тестов, помеченный `@BeforeClass`, который связывает константы с тестами. В нем так же создаются спецификации.
+`src/main/java/api/api_manager/ApiManager.java` - инициализирует модели запроса
+`src/main/java/api/models` - хранит реализации моделей запросов для каждого проекта и API
+`src/main/java/api/utils` - хранит общие методы проекта
+`src/main/java/api/utils/NetworkCore.java` - имплементирует логику создания http-запросов
+`src/main/java/api/utils/UtilsMethod.java` - имплементирует методы моделей
+`src/test/resources` - хранит xsd/json schemas, а также чувствительные тестовые данные
+
 
 ##Lifehacks
 - Если хочешь использовать аннотацию `@BeforeClass` из другого класса - сделай класс с тестами дочерним;
