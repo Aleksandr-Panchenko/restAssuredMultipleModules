@@ -1,16 +1,14 @@
 package config;
 
-import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.hamcrest.Matchers;
-import org.hamcrest.core.IsEqual;
 import org.testng.annotations.BeforeClass;
 
 
-import static constants.Constants.Actions.*;
+import static constants.Constants.Endpoints.*;
 import static constants.Constants.Paths.*;
 import static constants.Constants.Protocols.*;
 import static constants.Constants.Servers.*;

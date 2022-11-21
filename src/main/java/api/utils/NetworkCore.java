@@ -1,4 +1,28 @@
 package api.utils;
 
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+import org.json.JSONObject;
+import org.testng.Assert;
+
+import static io.restassured.RestAssured.*;
+
 public class NetworkCore {
+    protected Response response;
+    protected JSONObject responseBody;
+    protected RequestSpecBuilder requestSpecBuilder = new RequestSpecBuilder();
+    // #1
+    public void sendRequestAndGetResponse(Method method, int statusCode) {
+        response = given().spec(requestSpecBuilder.build()).
+         //       log().uri().log().parameters().log().body().
+                 log().all().
+                when().request(method);
+        response.then().assertThat().statusCode(statusCode);
+        try {
+            responseBody = new JSONObject(response.getBody().asString());
+        } catch (Exception e) {
+            Assert.fail("Cannot get response body");
+        }
+    }
 }

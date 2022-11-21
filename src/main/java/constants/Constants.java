@@ -27,7 +27,7 @@ public final class Constants {
         public static final String SUGGESTIONS_PATH = "suggestions/api/4_1/rs/suggest/";
     }
 
-    public static class Actions {
+    public static class Endpoints {
         //swapi
         public static final String GET_FILMS = "films/";
         public static final String GET_PEOPLE = "people/";

@@ -4,7 +4,7 @@ import config.TestConfig;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
-import static constants.Constants.Actions.*;
+import static constants.Constants.Endpoints.*;
 import static io.restassured.RestAssured.given;
 import static io.restassured.filter.log.LogDetail.ALL;
 import static org.hamcrest.Matchers.*;

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.Map;
 
-import static constants.Constants.Actions.*;
+import static constants.Constants.Endpoints.*;
 
 import static io.restassured.RestAssured.*;
 import static io.restassured.filter.log.LogDetail.*;
