@@ -2,11 +2,15 @@ package tests.suggestions.positive;
 
 import api.models.suggestions.SuggestionsModel;
 import base.BaseTest;
+import io.restassured.config.HeaderConfig;
+import io.restassured.config.RestAssuredConfig;
 import io.restassured.http.Method;
 import io.restassured.specification.FilterableRequestSpecification;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import static org.apache.http.HttpHeaders.AUTHORIZATION;
 
 
 public class SuggestionsPositiveTests extends BaseTest {

@@ -30,12 +30,11 @@ public class SuggestionsModel extends NetworkCore {
 //        getQueryParams.put("query", requestModel.getQuery());
 //        getQueryParams.put("count", requestModel.getCount());
 
-        requestModel.setToken("sds");
         HashMap<String, Object> bodyParams = new HashMap<>();
         bodyParams.put("query", requestModel.getQuery());
         bodyParams.put("count", requestModel.getCount());
         requestSpecBuilder.setBaseUri(HTTPS + SUGGESTIONS_SERVER).setBasePath(SUGGESTIONS_PATH + POST_FIO).
-                setContentType("application/json").addHeader(AUTHORIZATION, requestModel.getToken())
+                setContentType("application/json").addHeader(AUTHORIZATION, "Token 03d11cd91af504bfd50f9ec4f60007f4900fbb13")
 //                .addQueryParams(getQueryParams)
                 .setBody(bodyParams);
         sendRequestAndGetResponse(method, statusCode);

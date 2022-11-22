@@ -8,7 +8,9 @@
 `src/main/java/api/utils` - хранит общие методы проекта  
 `src/main/java/api/utils/NetworkCore.java` - имплементирует базовую логику создания http-запросов  
 `src/main/java/api/utils/UtilsMethod.java` - имплементирует методы моделей  
-`src/test/resources` - хранит xsd/json schemas, а также чувствительные тестовые данные  
+`src/test/java/base/BaseTest.java`
+`src/test/java/tests/<projectName>/positive/<ProjectName>>PositiveTests.java`
+`src/test/resources` - хранит xsd/json schemas, а также чувствительные тестовые данные (data.properties)
 
 
 ##Lifehacks
